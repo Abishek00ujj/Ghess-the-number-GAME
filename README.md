@@ -15,7 +15,7 @@ To play the game, simply open the index.html file in your web browser.
 How to Play
 Open the game in your web browser.
 Enter your name in the input box provided and click the "Start Game" button.
-Enter the range of numbers for the guessing game (e.g., from 1 to 100).
+Enter the range of numbers for the guessing game (e.g., from 1 to 10).
 Guess a number within the specified range by entering it into the input box provided and clicking the "Guess" button.
 Receive hints after each guess to help narrow down the correct number.
 Continue guessing until you correctly guess the number.
