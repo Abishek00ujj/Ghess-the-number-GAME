@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="numbersimg.jpg">
+<style>
+    .center {
+      margin: auto;
+      width: 60%;
+      border: 3px solid #c3c9b9;
+      padding: 10px;
+      height:350px;
+      border-color:#8a2be2;
+    }
+    button:hover{
+        color:red;
+        background-color:rgb(0, 115, 255)
+    }
+    h1{
+        color:rgb(255, 47, 196);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .center
+    {
+        background-image:url('numbers.jpg');
+        }
+
+    .inputbox
+    {
+        border:solid;
+        border-width:5px;
+    }
+    em
+    {
+    
+        color:green;
+        font-weight:bold;
+    }
+    </style>
+    <title>GHESS THE NUMBER GAME</title>
+    </head>
+    <body>
+                  
+        
+
+    
+        <h1 style="text-align:center; font-weight:bolder">GUESS THE NUMBER🔢</h1>
+        <div class="center">
+       
+       <h1></h1> <em > GHESS THE NUMBER FROM 1-10</em></h1>
+        <p id="time">
+        <input id="input"> 
+        <button class="inputbox" onclick="validate()">CHECK</button>
+        <br>
+        <p id="ans"></p>
+        <br>
+        <p id="score"></p>
+    </div>
+    
+        <script>
+             var c=10
+            function validate()
+            {
+                var n=document.getElementById("input")
+                var n1=n.value
+                if(n1=='' ||!(n1>0 &&n1<=10))
+                {
+                    alert("PLEASE ENTER ANY NUMBER!")
+                    return
+                }
+                var answer=Math.floor(Math.random()*10)+1
+                if(answer==n1)
+                {
+                 ans.textContent="WOW, RIGHT!"
+                    alert("YOU WON!")
+                    c++;
+                }
+                else{
+                    ans.textContent="OOPS ,SO SAD!"
+                    c--;
+                }
+                var s=document.getElementById("score");
+                score.textContent="Your score is "+c
+    if(c<1)
+    {
+        alert("GAME OVERED!");
+        ans.textContent="New Round!"
+        c=10
+    }
+            }
+            </script>
+    </body>
+</html>
